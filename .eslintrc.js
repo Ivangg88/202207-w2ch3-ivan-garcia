@@ -9,5 +9,7 @@ module.exports = {
   },
   rules: {
     "no-plusplus": "off",
+    "no-alert": "off",
+    "no-console": "off",
   },
 };
