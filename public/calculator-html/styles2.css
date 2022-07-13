@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 30px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(background-unicorns.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255,180,120,0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: rgba(255, 192, 203, 0.3);
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    border: 5px solid pink;
+    border-radius: 30px;;
+}
+
+
+.output {
+  display: flex;
+  background-color: inherit;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+}
+
+.display {
+  font-size: x-large;
+  background-color: inherit;
+  color: white;
+  border: 0;
+  outline: 0;
+  size: 100%;
+}
+
+.buttons{
+  height: 78%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+button {
+    width: calc(100% / 4);
+    padding: 5px;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+
+.number{
+    background-color: palevioletred;
+  }
+
+.operator {
+    background-color: orangered;
+}
+
+.delete {
+  width: calc(100%/2);
+}
+
+.zero {
+width: calc(75%);
+}
+
+.space {
+  background-color: inherit;
+}
+  .number:hover {
+    background-color: pink;
+    color:black;
+    font-weight: bold;
+  }
+
+  .operator:hover {
+    background-color: pink;
+    color:black;
+    font-weight: bold;
+  }
+
+  .button-change {
+    display: flex;
+    background-color: pink;
+    width: 300px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 0;
+    justify-items: center;
+    align-items: stretch;
+    border: 5px solid pink;
+        border-radius: 30px;;
+}
+
+.change-style {
+  background-color:inherit;
+  width: 300px;
+  height: 50px;
+  border: 5px solid inherit;
+}
+  .change-style:hover {
+    background-color: pink;
+    color:black;
+    font-weight: bold;
+  }
+
