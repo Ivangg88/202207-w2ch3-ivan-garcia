@@ -1,0 +1,5 @@
+Ivan, estoy probando el ejercicio y en el user te diría que quizás, cuando se elija el vuelo, 
+comentar por consola cuál se ha escogido. Así podemos mostrar que hemos escogido bien usando el id. Doing
+
+Luego en el caso del admin estaría bien actualizar el listado de vuelos después de borrar uno 
+para ver que realmente se ha borrado. Te la paso a doing. Saludos ???
