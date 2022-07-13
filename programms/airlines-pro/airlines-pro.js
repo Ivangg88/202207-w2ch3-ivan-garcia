@@ -116,7 +116,6 @@ const deleteFlight = () => {
 };
 
 const actionsAdmin = () => {
-  // al haber dos opciones se separan en dos funciones diferentes.
   console.log("You are identifier as admin");
   let action;
   do {
@@ -131,20 +130,6 @@ const actionsAdmin = () => {
     } else if (action === "d") {
       deleteFlight();
     }
-
-    /*
-        switch(action){
-            case "c":
-                createFlight();
-                break;
-            case "d":
-                deleteFlight();
-                break;
-            case null:
-                alert("End of programm");
-                break;
-        }
-        */
   } while (action !== "c" || action !== "d" || action !== null);
 };
 
@@ -167,8 +152,6 @@ const actionsUser = () => {
       flightBought.push(flight);
     }
   });
-
-  // const flightBought = flightsByCost.filter((element) =>{ element.id === selectedId});
 
   console.log(`You have booked the next flight:`);
   console.log(flightBought);
