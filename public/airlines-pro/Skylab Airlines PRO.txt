@@ -1,0 +1,18 @@
+Skylab Airlines PRO
+Después de ver toda la información de los vuelos, precio medios, escalas y los ultimos 5 vuelos el programa pedirá al usuario si es ADMIN/USER (debe aceptar mayúsculas y minúsculas indiferentemente). Dependiendo de la elección, el programa se comportará de la siguiente manera:
+
+Si eres ADMIN, la función debería permitir:
+1- Poder crear más vuelos pidiendo la información por prompt().
+
+2- El programa no puede tener mas de 15 vuelos, si se intenta introducir uno más, saltará un alert().
+
+3- Tener en cuenta que no se pueden repetir ID's y cuando se crea un vuelo nuevo, se deberia de mostrar todos los vuelos con sus ID's.
+
+4- Poder eliminar vuelos mediante el ID.
+
+Si eres USER la función debería permitir poder comprar un vuelo. Para comprar un vuelo, debeires hacer lo siguiente:
+1- El usuario debe poder buscar por precio. Cuando el usuario ponga el precio, debera mostrar los vuelos que tengan ese precio o mas baratos.
+
+2- El programa debería mostrar los datos de los vuelos encontrados con sus ID's. Y a su vez un prompt preguntandole al usuario el ID del vuelo que quiere comprar.
+
+3- Una vez introducido el ID el programa responderá: "Gracias por su compra, vuelva pronto." Y se acaba el programa.

@@ -1,0 +1,131 @@
+    const askLetter =(question)=>{
+        let newWord;
+    
+        if(!question[turn].status){
+        newWord = prompt(`Con la ${question[turn].letter}: ${question[turn].question}`);
+        }
+
+        if(!question[turn].answer){
+            turn++;
+            return askLetter();
+        }
+       
+        if(newWord.toLowerCase === question[turn].answer){
+            alert("Your word is correct!!!");
+            correctQuestions.push(question);
+            question.status = 1;
+            turn++;
+            return;
+        }
+
+        return;
+    }
+
+
+const askWord =(questions) =>{
+    questions.forEach((word)=> {
+        turn++
+        newWord = prompt(`Con la ${word.letter}: ${word.question}`);
+        console.log(newWord);
+        console.log(`turno: ${turn}`);
+
+     
+        if(newWord.toLowerCase === word.answer){
+            alert(`Congratulations the word is correct.`);
+            correctQuestions.push(newWord);
+            newWord = false;
+            wordsFound++;
+            console.log(`Tienes ${wordsFound} de ${questions.length}`)
+            word.status = 1;
+            nexTurn ++;
+        
+    }
+
+    else if(!newWord){
+        alert("Please introduce a word or END to finish.")
+        return askWord();
+    }
+
+    else if(newWord.toLowerCase === "end"){
+        endProgramm();
+        return;
+    }
+    });
+
+    return;
+
+    }
+
+
+    const askWord =() =>{
+    for(let i = 0; i<questions.length; i++){
+        turn++
+        newWord = prompt(`Con la ${questions[i].letter}: ${questions[i].question}`);
+        console.log(newWord);
+        console.log(`turno: ${turn}`);
+
+     
+        if(newWord.toLowerCase === questions[i].answer){
+            alert(`Congratulations the word is correct.`);
+            correctQuestions.push(newWord);
+            newWord = false;
+            wordsFound++;
+            console.log(`Tienes ${wordsFound} de ${questions.length}`)
+            word.status = 1;
+            nexTurn ++;
+        
+    }
+
+    else if(!newWord || newWord===null){
+        alert("Please introduce a word or END to finish.")
+        return askWord();
+    }
+
+    else if(newWord.toLowerCase === "end"){
+        endProgramm();
+        return;
+    }
+        }
+    return;
+
+    }
+
+
+ const askWord =(questions) =>{
+        let exit = true;
+        do {
+            
+        questions.forEach((word)=> {
+            turn++
+            newWord = prompt(`Con la ${word.letter}: ${word.question}`);
+            console.log(newWord);
+            console.log(`turno: ${turn}`);
+    
+         if(newWord === null){
+            endProgramm();
+            exit = false;
+         }
+         
+         if(!newWord){
+            alert("Please introduce a word or END to finish.")
+            return askWord();
+        }
+    
+        if(newWord === "end"){
+            endProgramm();
+            exit = false;
+        }
+
+        if(newWord === word.answer){
+            alert(`Congratulations the word is correct.`);
+            correctQuestions.push(newWord);
+            newWord = false;
+            wordsFound++;
+            console.log(`Tienes ${wordsFound} de ${questions.length}`)
+            word.status = 1;
+            turn++;
+        }
+        });
+    } while (questions.length > 0);
+        return;
+        }
